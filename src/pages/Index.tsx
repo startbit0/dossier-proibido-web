@@ -1,5 +1,5 @@
 
-import { Fire } from "lucide-react";
+import { Flame } from "lucide-react";
 
 const Index = () => {
   return (
@@ -67,7 +67,7 @@ const Index = () => {
                 <div className="aspect-square bg-gray-900 rounded-lg flex items-center justify-center mb-4">
                   <div className="text-center">
                     <div className="w-16 h-16 bg-dossie-red rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Fire className="w-8 h-8 text-white" />
+                      <Flame className="w-8 h-8 text-white" />
                     </div>
                     <p className="font-typewriter text-sm text-dossie-grey">
                       EVIDENCE BOARD
