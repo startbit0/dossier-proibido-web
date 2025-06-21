@@ -1,4 +1,3 @@
-
 import { Flame } from "lucide-react";
 
 const Index = () => {
@@ -26,19 +25,14 @@ const Index = () => {
             O dossiê que conecta os pontos que a história oficial insiste em manter separados.
           </p>
           
-          {/* Book Cover Placeholder */}
+          {/* Book Cover */}
           <div className="mb-12 animate-fade-in-up" style={{animationDelay: '0.6s'}}>
-            <div className="bg-gray-800 border-2 border-dossie-red w-80 h-96 mx-auto rounded-lg shadow-2xl flex items-center justify-center">
-              <div className="text-center p-8">
-                <h3 className="font-oswald text-2xl text-dossie-red mb-4 uppercase">
-                  Como o Crime e a Política<br />
-                  se Fundiram no Brasil
-                </h3>
-                <div className="w-16 h-1 bg-dossie-yellow mx-auto mb-4"></div>
-                <p className="font-typewriter text-sm text-dossie-light">
-                  DOSSIÊ PROIBIDO
-                </p>
-              </div>
+            <div className="mx-auto max-w-sm">
+              <img 
+                src="/lovable-uploads/8d0d9131-4f6f-4de3-a464-2ddd84f56a2a.png" 
+                alt="Como o Crime e a Política se Fundiram no Brasil - Capa do Livro"
+                className="w-full h-auto rounded-lg shadow-2xl border-2 border-dossie-red"
+              />
             </div>
           </div>
         </div>
@@ -205,8 +199,12 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-12">
-              <div className="w-24 h-24 bg-dossie-red rounded-full flex items-center justify-center mx-auto mb-8">
-                <div className="w-8 h-8 bg-white rounded-full"></div>
+              <div className="w-32 h-32 mx-auto mb-8 flex items-center justify-center">
+                <img 
+                  src="/lovable-uploads/dda9371f-c30a-4453-8828-ffa0f0300337.png" 
+                  alt="Mudança de Ordem Logo"
+                  className="w-full h-full object-contain"
+                />
               </div>
             </div>
             
