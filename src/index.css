@@ -1,8 +1,9 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
+/* Dossiê Proibido Dark Theme Styling */
 
 @layer base {
   :root {
@@ -37,19 +38,12 @@
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -98,6 +92,64 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-dossie-dark text-dossie-light font-lora;
   }
+}
+
+@layer components {
+  .dossie-headline {
+    @apply font-anton text-4xl md:text-6xl lg:text-7xl uppercase tracking-wider text-dossie-red;
+  }
+  
+  .dossie-subheading {
+    @apply font-oswald text-xl md:text-2xl lg:text-3xl font-medium text-dossie-light;
+  }
+  
+  .dossie-typewriter {
+    @apply font-typewriter text-lg md:text-xl text-gray-800;
+  }
+  
+  .dossie-body {
+    @apply font-lora text-base md:text-lg leading-relaxed text-dossie-light;
+  }
+  
+  .crime-tape {
+    background: repeating-linear-gradient(
+      45deg,
+      #fbbf24,
+      #fbbf24 20px,
+      #000 20px,
+      #000 40px
+    );
+    background-size: 56px 56px;
+    animation: slide 20s linear infinite;
+  }
+  
+  @keyframes slide {
+    0% { background-position: 0 0; }
+    100% { background-position: 56px 56px; }
+  }
+  
+  .evidence-card {
+    @apply bg-gray-900 border-l-4 border-dossie-red p-6 mb-4 transition-all duration-300 hover:bg-gray-800 hover:border-dossie-yellow;
+  }
+  
+  .confidential-badge {
+    @apply animate-pulse-red bg-dossie-red text-white px-4 py-2 rounded-full text-sm font-oswald font-semibold uppercase tracking-wide;
+  }
+}
+
+/* Grainy texture overlay */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(circle at 1px 1px, rgba(255,255,255,.15) 1px, transparent 0);
+  background-size: 20px 20px;
+  pointer-events: none;
+  z-index: -1;
 }
