@@ -1,3 +1,4 @@
+
 import { Flame } from "lucide-react";
 
 const Index = () => {
@@ -56,17 +57,19 @@ const Index = () => {
             </h2>
             
             <div className="grid lg:grid-cols-2 gap-12 items-center">
-              {/* Conspiracy Board Visual */}
+              {/* Video Evidence */}
               <div className="bg-gray-800 p-8 rounded-lg border border-dossie-red">
-                <div className="aspect-square bg-gray-900 rounded-lg flex items-center justify-center mb-4">
-                  <div className="text-center">
-                    <div className="w-16 h-16 bg-dossie-red rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Flame className="w-8 h-8 text-white" />
-                    </div>
-                    <p className="font-typewriter text-sm text-dossie-grey">
-                      EVIDENCE BOARD
-                    </p>
-                  </div>
+                <div className="aspect-video bg-gray-900 rounded-lg mb-4 overflow-hidden">
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/VINNusr2mg8"
+                    title="As Conexões que Eles Tentaram Esconder"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                    className="w-full h-full"
+                  ></iframe>
                 </div>
                 <p className="font-typewriter text-center text-dossie-grey">
                   As conexões que eles tentaram esconder
