@@ -41,7 +41,7 @@ const Index = () => {
       {/* SECTION 2: CRIME SCENE TAPE TRANSITION */}
       <section className="crime-tape py-6">
         <div className="container mx-auto px-4">
-          <p className="dossie-typewriter text-center font-bold text-black">
+          <p className="dossie-typewriter text-center font-bold text-red">
             CRUZE ESTA LINHA E DESCUBRA O QUE ELES NÃO QUEREM QUE VOCÊ SAIBA
           </p>
         </div>
