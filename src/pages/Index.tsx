@@ -8,14 +8,14 @@ const Index = () => {
         {/* Background texture overlay */}
         <div className="absolute inset-0 bg-black/60 z-10"></div>
         
-        {/* Confidential Badge */}
-        <div className="absolute top-8 right-8 z-20">
-          <div className="confidential-badge">
+        {/* Confidential Badge - Adjusted for mobile */}
+        <div className="absolute top-4 right-4 md:top-8 md:right-8 z-20">
+          <div className="confidential-badge text-xs md:text-sm">
             DOSSIÊ CONFIDENCIAL
           </div>
         </div>
         
-        <div className="relative z-20 text-center px-4 max-w-6xl mx-auto">
+        <div className="relative z-20 text-center px-4 max-w-6xl mx-auto pt-16 md:pt-0">
           <h1 className="dossie-headline mb-8 animate-fade-in-up">
             A VERDADE NÃO FOI PERDIDA.<br />
             FOI ENTERRADA.
@@ -41,7 +41,7 @@ const Index = () => {
       {/* SECTION 2: CRIME SCENE TAPE TRANSITION */}
       <section className="crime-tape py-6">
         <div className="container mx-auto px-4">
-          <p className="dossie-typewriter text-center font-bold text-red">
+          <p className="dossie-typewriter text-center">
             CRUZE ESTA LINHA E DESCUBRA O QUE ELES NÃO QUEREM QUE VOCÊ SAIBA
           </p>
         </div>

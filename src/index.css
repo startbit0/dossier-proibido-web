@@ -106,7 +106,7 @@
   }
   
   .dossie-typewriter {
-    @apply font-typewriter text-lg md:text-xl text-gray-800;
+    @apply font-typewriter text-lg md:text-xl text-dossie-red font-bold;
   }
   
   .dossie-body {
